@@ -1,8 +1,21 @@
+import TopBar from "./components/TopBar";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
+
 export default function App() {
   return (
-    <div className="container">
-      <h1>Website is Live 🚀</h1>
-      <p>This site is built with React and hosted for free.</p>
-    </div>
+    <>
+      <TopBar />
+      <Hero />
+
+      <section className="services-contact">
+        <Services />
+        <ContactForm />
+      </section>
+
+      <Footer />
+    </>
   );
 }
